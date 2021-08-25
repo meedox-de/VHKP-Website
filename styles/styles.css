@@ -1,0 +1,892 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Trebuchet MS, sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    border: solid 0px #153fef;
+}
+
+#flagge {
+    width: 110px;
+    height: 110px;
+    background-image: url(../img/24h.png);
+    background-size: 100%;
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+/* link formatierung */
+a:link {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #fade00;
+    font-weight: 700;
+}
+a:visited {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #fade00;
+    font-weight: 700;
+}
+a:hover {
+    border-bottom: solid #fade00 3px;  
+}
+a:active {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #fade00;
+    font-weight: 700;
+}
+
+/* Navigation formatierung */
+.menu_nav ul {
+    list-style-type: none;
+}
+.menu_nav li {
+    display: inline;
+}
+
+/* h1 Formatierung */
+h1 {
+    color: #fade00;
+    font-size: 2.0em;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+
+#header {
+    width: 100%;
+    height: 110px;
+    background-color: rgba(219, 16, 21, 0.7);
+    position: fixed;
+    top: 0px;
+}
+
+.content_box {
+    width: 100%;
+    background-color: #d6d6d6;
+    line-height: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.content_box h2 {
+    padding-bottom: 10px;
+    color: #db1015;
+}
+
+#logo {
+    width: 141px;
+    height: 107px;
+    background-image: url(../img/vhkpklein.png);
+    background-size: 100%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+#navigation {
+    float: left;
+    margin-top: 20px;
+    margin-left: 175px;
+    letter-spacing: 1px;
+    border: solid 0px #000000;
+    position: fixed;
+}
+
+
+/* index */
+#banner_index {
+    width: 100%;
+    height: 450px;
+    background: url(../img/banner/banner_index.png);
+    background-size: cover;
+}
+#content_index {
+    width: 882px;
+    border: solid 0px #db1015;    
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+#content_index h2 {
+    padding-bottom: 20px;
+}
+#content_index a {
+    color: darkred;
+    border: none;
+}
+
+#links {
+    float: left;
+    width: 590px;
+    border: solid 0px #153fef;
+}
+#rechts {
+    float: right;
+    width: 260px;
+    border: solid 0px #153fef;
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+#rechts table {
+    width: 100%;
+    border-bottom: solid 3px #4c4c4c;
+    border-top: solid 3px #4c4c4c;
+    border-radius: 3px; 
+}
+
+#rechts th {
+    text-align: left;
+    width: 85px;
+    padding-bottom: 5px;
+}
+
+.durchgestrichen {
+    text-decoration: line-through;
+}
+
+/* ------ index Aufklappbox ------ */
+
+.zeile {
+    border: solid 0px #000;
+    *zoom: 1; /* Für IE6 und IE7 */ 
+}
+.zeile:before, 
+.zeile:after { 
+	content: " "; 
+	display: table; 
+} 
+.zeile:after { 
+	clear: both; 
+}
+
+/* icon ambulant */
+#index_icon_ambulant {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_ambulant_2.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_ambulant:hover {
+    height: 440px;
+    width: 200px;
+    background: url(../img/icon_index_ambulant_zoom_2.png);
+    background-repeat: no-repeat;
+}
+#index_icon_ambulant:hover h2 {
+    color: #db1015;
+}
+#index_icon_ambulant h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_ambulant p {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* icon tagespflege */
+#index_icon_tagespflege {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_tagespflege.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_tagespflege:hover {
+    height: 400px;
+    width: 200px;
+    background: url(../img/icon_index_tagespflege_zoom.png);
+    background-repeat: no-repeat;
+}
+#index_icon_tagespflege:hover h2 {
+    color: #db1015;
+}
+#index_icon_tagespflege h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_tagespflege p {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* icon wunden */
+#index_icon_wunden {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_wundversorgung.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_wunden:hover {
+    height: 480px;
+    width: 200px;
+    background: url(../img/icon_index_wundversorgung_zoom.png);
+    background-repeat: no-repeat;
+}
+#index_icon_wunden:hover h2 {
+    color: #db1015;
+}
+#index_icon_wunden h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_wunden p {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* icon fahrdienst */
+#index_icon_fahrdienst {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_van.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_fahrdienst:hover {
+    height: 440px;
+    width: 200px;
+    background: url(../img/icon_index_van_zoom.png);
+    background-repeat: no-repeat;
+}
+#index_icon_fahrdienst:hover h2 {
+    color: #db1015;
+}
+#index_icon_fahrdienst h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_fahrdienst p {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* icon ear */
+#index_icon_ear {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_ear.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_ear:hover {
+    height: 400px;
+    width: 200px;
+    background: url(../img/icon_index_ear_zoom.png);
+    background-repeat: no-repeat;
+}
+#index_icon_ear:hover h2 {
+    color: #db1015;
+}
+#index_icon_ear h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_ear p {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* icon beratung */
+#index_icon_beratung {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_speach.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_beratung:hover {
+    height: 405px;
+    width: 200px;
+    background: url(../img/icon_index_speach_zoom.png);
+    background-repeat: no-repeat;
+}
+#index_icon_beratung:hover h2 {
+    color: #db1015;
+}
+#index_icon_beratung h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_beratung p {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: -17px;
+}
+
+/* icon hwv */
+#index_icon_hwv {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_hwv.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_hwv:hover {
+    height: 365px;
+    width: 200px;
+    background: url(../img/icon_index_hwv_zoom.png);
+    background-repeat: no-repeat;
+}
+#index_icon_hwv:hover h2 {
+    color: #db1015;
+}
+#index_icon_hwv h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_hwv p {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: -17px;
+}
+
+/* icon betreuung */
+#index_icon_betreuung {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_people.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_betreuung:hover {
+    height: 430px;
+    width: 200px;
+    background: url(../img/icon_index_people_zoom.png);
+    background-repeat: no-repeat;
+}
+#index_icon_betreuung:hover h2 {
+    color: #db1015;
+}
+#index_icon_betreuung h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_betreuung p {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* icon platzhalter */
+.index_icon_platzhalter {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* icon fusspflege */
+#index_icon_fusspflege {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_foot.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_fusspflege:hover {
+    height: 360px;
+    width: 200px;
+    background: url(../img/icon_index_foot_zoom.png);
+    background-repeat: no-repeat;
+}
+#index_icon_fusspflege:hover h2 {
+    color: #db1015;
+}
+#index_icon_fusspflege h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_fusspflege p {ß
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* icon seniorennachmittag */
+#index_icon_seniorennachmittag {
+    width: 200px;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #484848;
+    background: url(../img/icon/icon_index_seniorennachmittag.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#index_icon_seniorennachmittag:hover {
+    height: 425px;
+    width: 200px;
+    background: url(../img/icon_index_seniorennachmittag_zoom.png);
+    background-repeat: no-repeat;
+}
+#index_icon_seniorennachmittag:hover h2 {
+    color: #db1015;
+}
+#index_icon_seniorennachmittag h2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 155px;
+}
+#index_icon_seniorennachmittag p {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+/* -------------------------------- */
+
+/* about */
+#banner_about {
+    width: 100%;
+    height: 450px;
+    background: url(../img/banner/banner_about.png);
+    background-size: cover;
+}
+#content_about {
+    width: 100%;
+    border: solid 0px #db1015;    
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#content_about h2 {
+    padding-bottom: 25px;
+}
+#content_about h3 {
+    color: #4c4c4c;
+    font-size: 1.3em;
+    letter-spacing: 2px; 
+    padding-bottom: 5px;
+}
+#content_about h4 {
+    font-size: 0.95em;
+    color: #767676;
+}
+.about_wrapper {
+    border-top: solid 3px #4c4c4c;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about_wrapper:before, 
+.about_wrapper:after { 
+	content: " "; 
+	display: table; 
+} 
+.about_wrapper:after { 
+	clear: both; 
+}
+#about_picture_foerster {
+    background: url(../img/ansprechpartner/foerster.JPG);
+    background-size: cover;
+    width: 300px;
+    height: 220px;
+    float: right;
+    box-shadow: 3px 3px 3px #484848;
+}
+#about_beschreibung_foerster {
+    padding-left: 20px;
+    float: left;
+    width: 600px;
+    border: solid 0px #db1015; 
+}
+#about_picture_foerster2 {
+    background: url(../img/ansprechpartner/platzhalter.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    float: left;
+    box-shadow: 3px 3px 3px #484848;
+}
+#about_beschreibung_foerster2 {
+    padding-left: 20px;
+    float: left;
+    width: 500px;
+    height: 110px;
+    border: solid 0px #db1015; 
+}
+#about_picture_usselmann {
+    background: url(../img/ansprechpartner/platzhalter.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    float: left;
+    box-shadow: 3px 3px 3px #484848;
+}
+#about_beschreibung_usselmann {
+    padding-left: 20px;
+    float: left;
+    width: 500px;
+    height: 110px;
+    border: solid 0px #db1015; 
+}
+#about_picture_seidel {
+    background: url(../img/ansprechpartner/platzhalter.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    float: right;
+    box-shadow: 3px 3px 3px #484848;
+}
+#about_beschreibung_seidel {
+    padding-right: 20px;
+    float: right;
+    width: 500px;
+    border: solid 0px #db1015; 
+    text-align: right;
+}
+#about_beschreibung_meyer {
+    padding-right: 20px;
+    padding-top: 20px;
+    float: left;
+    width: 310px;
+    height: 210px;
+    border: solid 0px #db1015; 
+    text-align: right;
+}
+#about_picture_verwaltung {
+    background: url(../img/ansprechpartner/verwaltung.JPG);
+    background-size: cover;
+    width: 280px;
+    height: 210px;
+    float: left;
+    box-shadow: 3px 3px 3px #484848;
+}
+#about_beschreibung_hoffmann {
+    padding-left: 20px;
+    padding-top: 148px;
+    float: right;
+    width: 310px;
+    height: 210px;
+    border: solid 0px #db1015; 
+    text-align: left;
+}
+
+/* services */
+#banner_services {
+    width: 100%;
+    height: 450px;
+    background: url(../img/banner/banner_services.png);
+    background-size: cover;
+}
+#content_services {
+    width: 100%;
+    border: solid 0px #db1015;    
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#content_services h2 {
+    padding-bottom: 30px;
+}
+
+/* contact */
+#banner_contact {
+    width: 100%;
+    height: 450px;
+    background: url(../img/banner/banner_contact.png);
+    background-size: cover;
+}
+#content_contact {
+    width: 100%;
+    border: solid 0px #db1015;    
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+#content_contact h2 {
+    padding-bottom: 30px;
+}
+#content_contact a {
+    color: darkred;
+    border: none;
+}
+
+
+/* jobs */
+#banner_jobs {
+    width: 100%;
+    height: 450px;
+    background: url(../img/banner/banner_jobs.png);
+    background-size: cover;
+}
+#content_jobs {
+    width: 100%;
+    border: solid 0px #db1015;    
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#content_jobs h2 {
+    padding-bottom: 20px;    
+}
+#content_jobs h3 {
+    padding-bottom: 0px;
+    font-style: italic;
+}
+#content_jobs h4 {
+    padding-bottom: 10px;
+}
+#content_jobs p {
+    padding-bottom: 10px;
+}
+#content_jobs a {
+    color: darkred;
+    border: none;
+}
+/* ------ jobs Aufklappbox ------ */
+#expDIV1 {
+    border: solid 0px #ef1515;
+    width: 179px;
+}
+#expDIV1:hover h3 {
+    border-bottom: solid darkred 2px;
+}
+#expDIV1_collapse {
+    display: none;
+    padding-left: 30px;
+    width: 800px;
+    border-left: solid darkred 2px;
+}
+
+#expDIV2 {
+    border: solid 0px #ef1515;
+    width: 178px;
+}
+#expDIV2:hover h3 {
+    border-bottom: solid darkred 2px;
+}
+#expDIV2_collapse {
+    display: none;
+    padding-left: 30px;
+    width: 800px;
+    border-left: solid darkred 2px;
+}
+
+#expDIV3 {
+    border: solid 0px #ef1515;
+    width: 229px;
+}
+#expDIV3:hover h3 {
+    border-bottom: solid darkred 2px;
+}
+#expDIV3_collapse {
+    display: none;
+    padding-left: 30px;
+    width: 800px;
+    border-left: solid darkred 2px;
+}
+
+#expDIV4 {
+    border: solid 0px #ef1515;
+    width: 200px;
+}
+#expDIV4:hover h3 {
+    border-bottom: solid darkred 2px;
+}
+#expDIV4_collapse {
+    display: none;
+    padding-left: 30px;
+    width: 800px;
+    border-left: solid darkred 2px;
+}
+
+#expDIV5 {
+    border: solid 0px #ef1515;
+    width: 199px;
+}
+#expDIV5:hover h3 {
+    border-bottom: solid darkred 2px;
+}
+#expDIV5_collapse {
+    display: none;
+    padding-left: 30px;
+    width: 800px;
+    border-left: solid darkred 2px;
+}
+/* -------------------------------- */
+
+/* impressum */
+#banner_impressum {
+    width: 100%;
+    height: 450px;
+    background: url(../img/banner/banner_impressum.jpg);
+    background-size: cover;
+}
+#content_impressum {
+    width: 100%;
+    border: solid 0px #db1015;    
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#content_impressum h2 {
+    padding-bottom: 30px;
+}
+
+#content_impressum a {
+    color: darkred;
+    border: none;
+}
+
+#footer {
+    background-color: rgba(219, 16, 21, 0.7);
+    height: 65px;
+    padding: 10px;
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+    box-shadow: 10px 10px 10px #484848;
+}
+
+#impressum {
+    text-align: center;
+    letter-spacing: 4px;
+    padding-bottom: 15px;
+}
+
+#copy {
+    text-align: center;
+    color: #fade00;
+    font-size: 12px;
+}
